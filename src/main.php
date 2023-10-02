@@ -3,14 +3,14 @@
 include_once __DIR__ . "/../vendor/autoload.php";
 
 
-
-use Monolog\Level;
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+use App\SystemServices\MonologFactory;
 
 
-// create a log channel
-$logger = new Logger ('MEUAPP');
-$logger->pushHandler(new StreamHandler('meuslogs.log', level::debug));
 
+
+$logger = MonologFactory::getInstance();
+
+$logger->info("apenas uma informacao que eu programado julgo relevante loggar");
 $logger->debug("Arquivo main.php rodando...");
+$logger->error("Isso seria se meu app desse um erro.....");
+?>
