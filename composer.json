@@ -1,0 +1,19 @@
+{
+    "name": "luisl/php_monolog_slim",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^2.9",
+        "slim/slim": "^4.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DEV-LONNOS",
+            "email": "luisfelipedasilvaaraujo18@gmail.com"
+        }
+    ]
+}
